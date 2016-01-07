@@ -1,0 +1,35 @@
+{
+  "extends": "ember",
+  "rules": {
+    "indent": [2, 2],
+    "quotes": [2, "single"],
+    "linebreak-style": [2, "unix"],
+    "semi": [2, "always"],
+    "spaced-comment": [2, "always", { "exceptions": ["-", "+"] }],
+    "camelcase": [1, { "properties": "always" }],
+    "no-restricted-syntax": [
+      2,
+      "WithStatement"
+    ],
+    "object-curly-spacing": [2, "always"],
+    "curly": 2,
+    "no-implicit-coercion": [2, {"boolean": false, "number": true, "string": true}],
+    "space-before-function-paren": [2, { "anonymous": "always", "named": "always" }],
+    "arrow-spacing": [2, { "before": true, "after": true }],
+    "no-warning-comments": [1, { "terms": ["todo", "fixme", "xxx"], "location": "start" }],
+    "arrow-parens": [2, "always"],
+    "valid-jsdoc": 1,
+    "no-console": 1,
+    "no-debugger": 1,
+    "no-unused-vars": [2, {"vars": "all", "args": "after-used"}],
+    "brace-style": [2, "1tbs", { "allowSingleLine": true }],
+    "no-ternary": 0,
+    "max-len": [2, 140, 4, {"ignoreComments": true, "ignoreUrls": true, "ignorePattern": "^\\s*var\\s.+=\\s*require\\s*\\("}]
+
+  },
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "parser": "babel-eslint"
+}
